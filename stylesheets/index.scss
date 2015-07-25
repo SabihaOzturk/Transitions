@@ -1,0 +1,13 @@
+@import "mixins";
+@import "variables";
+@import "nav";
+
+h1{
+  text-align: center;
+}
+.content {
+  @include content;
+}
+.content-inner{
+  @include content-inner;
+}
