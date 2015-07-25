@@ -1,26 +1,30 @@
 /*// generic transform*/
 /*//generic transitions*/
+body {
+  background-color: #FA8072; }
+
 h1 {
   text-align: center; }
 
 .content {
   margin: 0 auto;
   padding: 0;
-  background-color: #ccc;
-  border: 2px solid #000;
-  width: 600px;
-  height: 300px;
+  background-color: #ADCCAC;
+  border: 5px solid #C4C7FF;
+  width: 800px;
+  height: 350px;
   border-radius: 20px;
-  margin-top: 2%; }
-  .content:hover {
+  margin-top: 3%;
+  margin-top: 6%; }
+  .content:target, .content:hover {
     cursor: pointer; }
 
 #opacity {
   border: 1px gray solid;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 100px;
-  margin: 20% auto;
+  margin: 16% auto;
   padding: 30px;
   background-image: -moz-linear-gradient(top, #FFA500, #FFE613);
   background-image: -webkit-linear-gradient(top, #FFA500, #FFE613);
@@ -35,7 +39,7 @@ h1 {
   -ms-transition-property: 0s;
   transition-property: 0s;
   opacity: 1; }
-  #opacity:hover {
+  #opacity:target, #opacity:hover {
     -moz-transition: 2s;
     -o-transition: 2s;
     -webkit-transition: 2s;
@@ -45,10 +49,10 @@ h1 {
 
 #margin {
   border: 1px gray solid;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 100px;
-  margin: 20% auto;
+  margin: 16% auto;
   padding: 30px;
   background-image: -moz-linear-gradient(top, #FFA500, #FFE613);
   background-image: -webkit-linear-gradient(top, #FFA500, #FFE613);
@@ -62,21 +66,21 @@ h1 {
   -webkit-transition-property: 0s;
   -ms-transition-property: 0s;
   transition-property: 0s;
-  margin-top: 20%; }
-  #margin:hover {
+  margin-top: 18%; }
+  #margin:target, #margin:hover {
     -moz-transition: 2s;
     -o-transition: 2s;
     -webkit-transition: 2s;
     -ms-transition: 2s;
     transition: 2s;
-    margin-top: 40%; }
+    margin-top: 38%; }
 
 #position {
   border: 1px gray solid;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 100px;
-  margin: 20% auto;
+  margin: 16% auto;
   padding: 30px;
   background-image: -moz-linear-gradient(top, #FFA500, #FFE613);
   background-image: -webkit-linear-gradient(top, #FFA500, #FFE613);
@@ -98,7 +102,7 @@ h1 {
   -webkit-transition-timing-function: 0s;
   transition-timing-function: 0s;
   cubic-bezier: 0s; }
-  #position:hover {
+  #position:target, #position:hover {
     left: 200px;
     -moz-transition: 5s;
     -o-transition: 5s;
@@ -108,10 +112,10 @@ h1 {
 
 #transform-rotate {
   border: 1px gray solid;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 100px;
-  margin: 20% auto;
+  margin: 16% auto;
   padding: 30px;
   background-image: -moz-linear-gradient(top, #FFA500, #FFE613);
   background-image: -webkit-linear-gradient(top, #FFA500, #FFE613);
@@ -120,7 +124,7 @@ h1 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  margin: 2% auto;
+  margin: 5% auto;
   background-image: -moz-linear-gradient(top, #FF6347, #0000FF);
   background-image: -webkit-linear-gradient(top, #FF6347, #0000FF);
   background-image: -o-linear-gradient(top, #FF6347, #0000FF);
@@ -135,7 +139,7 @@ h1 {
   -webkit-transition-property: 0s;
   -ms-transition-property: 0s;
   transition-property: 0s; }
-  #transform-rotate:hover {
+  #transform-rotate:target, #transform-rotate:hover {
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -149,10 +153,10 @@ h1 {
 
 #transform-scale {
   border: 1px gray solid;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 100px;
-  margin: 20% auto;
+  margin: 16% auto;
   padding: 30px;
   background-image: -moz-linear-gradient(top, #FFA500, #FFE613);
   background-image: -webkit-linear-gradient(top, #FFA500, #FFE613);
@@ -161,7 +165,7 @@ h1 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  margin: 2% auto;
+  margin: 5% auto;
   background-image: -moz-linear-gradient(top, #FF6347, #0000FF);
   background-image: -webkit-linear-gradient(top, #FF6347, #0000FF);
   background-image: -o-linear-gradient(top, #FF6347, #0000FF);
@@ -176,7 +180,7 @@ h1 {
   -ms-transform: scale(0.2);
   -webkit-transform: scale(0.2);
   transform: scale(0.2); }
-  #transform-scale:hover {
+  #transform-scale:target, #transform-scale:hover {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -ms-transform: scale(1);
