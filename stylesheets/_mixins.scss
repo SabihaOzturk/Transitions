@@ -45,6 +45,19 @@
   opacity:($opacity);
 }
 
+@mixin margin($margin, $duration){
+  @include transition-duration($duration...);
+  margin-top: $margin;
+}
+
+@mixin margin-transition($margin, $transition){
+  @include transition($transition...);
+  margin-top: $margin;
+}
+
+
+
+
 @mixin transition($transition...) {
     -moz-transition:    $transition;
     -o-transition:      $transition;

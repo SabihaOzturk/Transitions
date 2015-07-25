@@ -40,4 +40,33 @@ h1 {
     transition: 2s;
     opacity: 0.2; }
 
+#margin {
+  border: 1px gray solid;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 20% auto;
+  padding: 30px;
+  background-image: -moz-linear-gradient(top, #FFA500, #FFE613);
+  background-image: -webkit-linear-gradient(top, #FFA500, #FFE613);
+  background-image: -o-linear-gradient(top, #FFA500, #FFE613);
+  background-image: -ms-linear-gradient(top, #FFA500, #FFE613);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transition-property: 0s;
+  -o-transition-property: 0s;
+  -webkit-transition-property: 0s;
+  -ms-transition-property: 0s;
+  transition-property: 0s;
+  margin-top: 100px; }
+  #margin:target, #margin:hover {
+    cursor: pointer;
+    -moz-transition: 2s;
+    -o-transition: 2s;
+    -webkit-transition: 2s;
+    -ms-transition: 2s;
+    transition: 2s;
+    margin-top: 150px; }
+
 /*# sourceMappingURL=index.css.map */

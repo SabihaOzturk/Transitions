@@ -18,3 +18,13 @@ h1{
   @include opacity-transition(.2, 2s);
   }
 }
+
+#margin {
+  @include content-inner;
+  @include margin(100px, 0s);
+  
+  &:target, &:hover{
+  cursor:pointer;
+  @include margin-transition(150px, 2s);
+  }
+}
