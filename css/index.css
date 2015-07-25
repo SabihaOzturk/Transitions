@@ -147,4 +147,45 @@ h1 {
     -ms-transition: 7s;
     transition: 7s; }
 
+#transform-scale {
+  border: 1px gray solid;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 20% auto;
+  padding: 30px;
+  background-image: -moz-linear-gradient(top, #FFA500, #FFE613);
+  background-image: -webkit-linear-gradient(top, #FFA500, #FFE613);
+  background-image: -o-linear-gradient(top, #FFA500, #FFE613);
+  background-image: -ms-linear-gradient(top, #FFA500, #FFE613);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 2% auto;
+  background-image: -moz-linear-gradient(top, #FF6347, #0000FF);
+  background-image: -webkit-linear-gradient(top, #FF6347, #0000FF);
+  background-image: -o-linear-gradient(top, #FF6347, #0000FF);
+  background-image: -ms-linear-gradient(top, #FF6347, #0000FF);
+  -moz-transition: 5s;
+  -o-transition: 5s;
+  -webkit-transition: 5s;
+  -ms-transition: 5s;
+  transition: 5s;
+  -moz-transform: scale(0.2);
+  -o-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  -webkit-transform: scale(0.2);
+  transform: scale(0.2); }
+  #transform-scale:hover {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -moz-transition-timing-function: 2s;
+    -o-transition-timing-function: 2s;
+    -ms-transition-timing-function: 2s;
+    -webkit-transition-timing-function: 2s;
+    transition-timing-function: 2s; }
+
 /*# sourceMappingURL=index.css.map */

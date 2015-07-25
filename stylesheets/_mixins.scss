@@ -78,6 +78,16 @@
   @include transition($transition...);
 }
 
+@mixin scale($scale, $transition){
+  @include transition($transition...);
+  @include transform(scale($scale)); 
+}
+@mixin transform-scale($scale, $timing){
+  @include transform(scale($scale)); 
+  @include transition-timing-function($timing...);
+}
+
+
 
 /*// generic transform*/
 @mixin transform($transforms) {
