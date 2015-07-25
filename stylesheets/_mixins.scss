@@ -69,12 +69,12 @@
 }
 
 @mixin rotate($deg, $duration) {
-  @include transform(rotate(#{$deg}deg));
+  @include transform(rotate(#{$deg}));
   @include transition-duration($duration...);
 }
 
 @mixin transform-rotate($deg, $transition){
-  @include transform(rotate(#{$deg}deg));
+  @include transform(rotate(#{$deg}));
   @include transition($transition...);
 }
 

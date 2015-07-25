@@ -120,26 +120,27 @@ h1 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  margin: 2% auto;
   background-image: -moz-linear-gradient(top, #FF6347, #0000FF);
   background-image: -webkit-linear-gradient(top, #FF6347, #0000FF);
   background-image: -o-linear-gradient(top, #FF6347, #0000FF);
   background-image: -ms-linear-gradient(top, #FF6347, #0000FF);
-  -moz-transform: rotate(5degdeg);
-  -o-transform: rotate(5degdeg);
-  -ms-transform: rotate(5degdeg);
-  -webkit-transform: rotate(5degdeg);
-  transform: rotate(5degdeg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
   -moz-transition-property: 0s;
   -o-transition-property: 0s;
   -webkit-transition-property: 0s;
   -ms-transition-property: 0s;
   transition-property: 0s; }
   #transform-rotate:hover {
-    -moz-transform: rotate(180degdeg);
-    -o-transform: rotate(180degdeg);
-    -ms-transform: rotate(180degdeg);
-    -webkit-transform: rotate(180degdeg);
-    transform: rotate(180degdeg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
     -moz-transition: 7s;
     -o-transition: 7s;
     -webkit-transition: 7s;
