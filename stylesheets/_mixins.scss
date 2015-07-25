@@ -68,6 +68,18 @@
   @include transition($transition...);
 }
 
+@mixin transform($rotate, $duration){
+  @include transition-duration($duration...);
+  rotate: $rotate;
+  transform:rotate(5deg);
+}
+
+@mixin transform-rotate($rotate, $transition){
+  @include transition($transition...);
+  rotate: $rotate;
+  transform:rotate(180deg);
+}
+
 
 
 @mixin transition($transition...) {
