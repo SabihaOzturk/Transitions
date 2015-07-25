@@ -5,26 +5,38 @@
 h1{
   text-align: center;
 }
+
 .content {
   @include content;
+
+  &:hover{
+  cursor: pointer;
+  }
 }
 
 #opacity {
   @include content-inner; 
   @include opacity(1, 0s);  
 
-  &:target, &:hover{
-  cursor:pointer;
+  &:hover{
   @include opacity-transition(.2, 2s);
   }
 }
 
 #margin {
   @include content-inner;
-  @include margin(100px, 0s);
+  @include margin(20%, 0s);
   
-  &:target, &:hover{
-  cursor:pointer;
-  @include margin-transition(150px, 2s);
+  &:hover{
+  @include margin-transition(40%, 2s);
+  }
+ }
+
+ #position{
+  @include content-inner;
+  @include position((0.3, -0.3, 0.7, 1.3), 0s);
+
+  &:hover{
+  @include position-transition(5s);
   }
 }
