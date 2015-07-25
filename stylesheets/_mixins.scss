@@ -1,1 +1,82 @@
-_mixins.scss
+@import "variables";
+@import "nav";
+
+@mixin content{
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ccc;
+  border: 2px solid #000;
+  width: 600px;
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 2%;
+}
+@mixin content-inner{
+  border:1px gray solid;
+  width:100px;
+  height:100px;
+  border-radius:100px;
+  margin:20% auto;
+  padding:30px;
+  @include vertical-gradient($circle-color, $circle-color2);
+  @include vertically-centered-element;
+}
+
+@mixin vertically-centered-element{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin vertical-gradient($fromColor, $toColor) {
+  background-image:-moz-linear-gradient(top, $fromColor, $toColor);
+  background-image:-webkit-linear-gradient(top, $fromColor, $toColor);
+  background-image:-o-linear-gradient(top, $fromColor, $toColor);
+  background-image:-ms-linear-gradient(top, $fromColor, $toColor);
+}
+
+@mixin opacity($opacity, $duration){
+  @include transition-duration($duration...);
+  opacity: $opacity; 
+}
+
+@mixin opacity-transition($opacity, $transition){
+  @include transition($transition...);
+  opacity:($opacity);
+}
+
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    -ms-transition:     $transition;
+    transition:         $transition;
+}
+@mixin transition-property($property...) {
+    -moz-transition-property:    $property;
+    -o-transition-property:      $property;
+    -webkit-transition-property: $property;
+    -ms-transition-property:     $property;
+    transition-property:         $property;
+}
+@mixin transition-duration($duration...) {
+    -moz-transition-property:    $duration;
+    -o-transition-property:      $duration;
+    -webkit-transition-property: $duration;
+    -ms-transition-property:     $duration;
+    transition-property:         $duration;
+}
+@mixin transition-timing-function($timing...) {
+    -moz-transition-timing-function:    $timing;
+    -o-transition-timing-function:      $timing;
+    -ms-transition-timing-function:     $timing;
+    -webkit-transition-timing-function: $timing;
+    transition-timing-function:         $timing;
+}
+@mixin transition-delay($delay...) {
+    -moz-transition-delay:    $delay;
+    -o-transition-delay:      $delay;
+    -ms-transition-delay:     $delay;
+    -webkit-transition-delay: $delay;
+    transition-delay:         $delay;
+}

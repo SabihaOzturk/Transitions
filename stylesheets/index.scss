@@ -8,6 +8,13 @@ h1{
 .content {
   @include content;
 }
-.content-inner{
-  @include content-inner;
+
+#opacity {
+  @include content-inner; 
+  @include opacity(1, 0s);  
+
+  &:target, &:hover{
+  cursor:pointer;
+  @include opacity-transition(.2, 2s);
+  }
 }
