@@ -1,3 +1,5 @@
+/*// generic transform*/
+/*//generic transitions*/
 h1 {
   text-align: center; }
 
@@ -118,25 +120,30 @@ h1 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  margin: 2% auto;
   background-image: -moz-linear-gradient(top, #FF6347, #0000FF);
   background-image: -webkit-linear-gradient(top, #FF6347, #0000FF);
   background-image: -o-linear-gradient(top, #FF6347, #0000FF);
   background-image: -ms-linear-gradient(top, #FF6347, #0000FF);
+  -moz-transform: rotate(5degdeg);
+  -o-transform: rotate(5degdeg);
+  -ms-transform: rotate(5degdeg);
+  -webkit-transform: rotate(5degdeg);
+  transform: rotate(5degdeg);
   -moz-transition-property: 0s;
   -o-transition-property: 0s;
   -webkit-transition-property: 0s;
   -ms-transition-property: 0s;
-  transition-property: 0s;
-  rotate: 5deg;
-  transform: rotate(5deg); }
+  transition-property: 0s; }
   #transform-rotate:hover {
+    -moz-transform: rotate(180degdeg);
+    -o-transform: rotate(180degdeg);
+    -ms-transform: rotate(180degdeg);
+    -webkit-transform: rotate(180degdeg);
+    transform: rotate(180degdeg);
     -moz-transition: 7s;
     -o-transition: 7s;
     -webkit-transition: 7s;
     -ms-transition: 7s;
-    transition: 7s;
-    rotate: 180deg;
-    transform: rotate(180deg); }
+    transition: 7s; }
 
 /*# sourceMappingURL=index.css.map */

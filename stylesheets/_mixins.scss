@@ -68,20 +68,27 @@
   @include transition($transition...);
 }
 
-@mixin transform($rotate, $duration){
+@mixin rotate($deg, $duration) {
+  @include transform(rotate(#{$deg}deg));
   @include transition-duration($duration...);
-  rotate: $rotate;
-  transform:rotate(5deg);
 }
 
-@mixin transform-rotate($rotate, $transition){
+@mixin transform-rotate($deg, $transition){
+  @include transform(rotate(#{$deg}deg));
   @include transition($transition...);
-  rotate: $rotate;
-  transform:rotate(180deg);
 }
 
 
+/*// generic transform*/
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
 
+/*//generic transitions*/
 @mixin transition($transition...) {
     -moz-transition:    $transition;
     -o-transition:      $transition;

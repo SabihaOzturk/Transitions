@@ -43,9 +43,8 @@ h1{
 
 #transform-rotate{
   @include content-inner;
-  margin: 2% auto;
   @include vertical-gradient($circle-color3, $circle-color4);
-  @include transform(5deg, 0s);
+  @include rotate(5deg, 0s);
 
   &:hover{
   @include transform-rotate(180deg, 7s);
