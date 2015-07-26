@@ -1,6 +1,6 @@
 @import "mixins";
 @import "variables";
-@import "nav";
+//@import "nav";
 
 body{
   background-color: #FA8072;
@@ -12,6 +12,7 @@ h1{
 .content {
   @include content;
   margin-top: 6%;
+
   &:target, &:hover{
   cursor:pointer;
   }
@@ -19,7 +20,8 @@ h1{
 
 #opacity {
   @include content-inner; 
-  @include opacity(1, 0s);  
+  @include opacity-transition(1, 0s);  
+
   &:target, &:hover{
   @include opacity-transition(.2, 2s);
   }
@@ -27,10 +29,10 @@ h1{
 
 #margin {
   @include content-inner;
-  @include margin(18%, 0s);
+  @include margin-transition(20%, 0s);
   
   &:target, &:hover{
-  @include margin-transition(38%, 2s);
+  @include margin-transition(40%, 2s);
   }
  } 
 
@@ -47,7 +49,7 @@ h1{
   @include content-inner;
   margin: 5% auto;
   @include vertical-gradient($circle-color3, $circle-color4);
-  @include rotate(5deg, 0s);
+  @include transform-rotate(5deg, 0s);
 
   &:target, &:hover{
   @include transform-rotate(180deg, 7s);
@@ -58,46 +60,31 @@ h1{
   @include content-inner;
   margin: 5% auto;
   @include vertical-gradient($circle-color3, $circle-color4);
-  @include scale(.2, 5s);
+  @include transform-scale(.2, 5s);
 
   &:target, &:hover{
   @include transform-scale(1, 2s);
   }
 }
 #kitty{
-  /*margin:0 auto;*/
   position:relative;
 }
 .anim1{
   @include anims;
-  /*width:300px;
-  height:225px;
-  background:url(images/kitty.png) no-repeat;
-  position:absolute;*/
-  top:10px;
+  top:50px;
   left:10px;
    
     @include animation-name (kitty1);
     @include kitty;
-    /*@include animation-duration (10s);
-    @include animation-timing-function (ease-in-out);
-    @include animation-iteration-count (infinite);*/
 }
 
 .anim2 {
   @include anims;
-  /*width:300px;
-  height:225px;
-  background:url(images/kitty.png) no-repeat;
-  position:absolute;*/
-  top: 75px; 
+  top: 110px; 
   right: 10px;
   
     @include animation-name (kitty2);
     @include kitty;
-    /*@include animation-duration (10s);
-    @include animation-timing-function (ease-in-out);
-    @include animation-iteration-count (infinite);*/
 }
 
 .anim3 {
@@ -105,7 +92,7 @@ h1{
   width: 75px; 
   height: 75px;
   position:absolute; 
-  top: 10px; 
+  top: 20px; 
   right: 300px;
 
     @include animation(sun);
