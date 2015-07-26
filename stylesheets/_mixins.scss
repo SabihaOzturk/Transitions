@@ -7,7 +7,7 @@
   background-color: #ADCCAC;
   border: 5px solid #C4C7FF;
   width: 800px;
-  height: 350px;
+  height: 400px;
   border-radius: 20px;
   margin-top: 3%;
 }
@@ -16,7 +16,7 @@
   width:200px;
   height:200px;
   border-radius:100px;
-  margin:16% auto;
+  margin:20% auto;
   padding:30px;
   @include vertical-gradient($circle-color, $circle-color2);
   @include vertically-centered-element;
@@ -35,19 +35,9 @@
   background-image:-ms-linear-gradient(top, $fromColor, $toColor);
 }
 
-@mixin opacity($opacity, $duration){
-  @include transition-duration($duration...);
-  opacity: $opacity; 
-}
-
 @mixin opacity-transition($opacity, $transition){
   @include transition($transition...);
   opacity:($opacity);
-}
-
-@mixin margin($margin, $duration){
-  @include transition-duration($duration...);
-  margin-top: $margin;
 }
 
 @mixin margin-transition($margin, $transition){
@@ -68,9 +58,8 @@
   @include transition($transition...);
 }
 
-@mixin rotate($deg, $duration) {
+@mixin rotate($deg) {
   @include transform(rotate(#{$deg}));
-  @include transition-duration($duration...);
 }
 
 @mixin transform-rotate($deg, $transition){
@@ -78,13 +67,9 @@
   @include transition($transition...);
 }
 
-@mixin scale($scale, $transition){
+@mixin transform-scale($scale, $transition){
+  @include transform(scale($scale)); 
   @include transition($transition...);
-  @include transform(scale($scale)); 
-}
-@mixin transform-scale($scale, $timing){
-  @include transform(scale($scale)); 
-  @include transition-timing-function($timing...);
 }
 
 @mixin anims{
@@ -98,10 +83,11 @@
   @include animation-duration (10s);
   @include animation-timing-function (ease-in-out);
   @include animation-iteration-count (infinite);
-
 }
 
-/*// generic transform*/
+
+
+// generic transform
 @mixin transform($transforms) {
      -moz-transform: $transforms;
        -o-transform: $transforms;
@@ -110,7 +96,7 @@
           transform: $transforms;
 }
 
-/*//generic transitions*/
+//generic transitions
 @mixin transition($transition...) {
     -moz-transition:    $transition;
     -o-transition:      $transition;
