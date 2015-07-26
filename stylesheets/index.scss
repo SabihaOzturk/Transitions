@@ -65,45 +65,39 @@ h1{
   }
 }
 #kitty{
-  margin:0 auto;
+  /*margin:0 auto;*/
   position:relative;
 }
 .anim1{
-  width:300px;
+  @include anims;
+  /*width:300px;
   height:225px;
   background:url(images/kitty.png) no-repeat;
-  position:absolute;
+  position:absolute;*/
   top:10px;
   left:10px;
    
     @include animation-name (kitty1);
-    @include animation-duration (10s);
+    @include kitty;
+    /*@include animation-duration (10s);
     @include animation-timing-function (ease-in-out);
-    @include animation-iteration-count (infinite);
+    @include animation-iteration-count (infinite);*/
 }
-@keyframes kitty1{
-    from { left: 10px;}
-    50% { left: 190px;}
-    to { left: 10px;}   
-}
+
 .anim2 {
-  width:300px;
+  @include anims;
+  /*width:300px;
   height:225px;
   background:url(images/kitty.png) no-repeat;
-  position:absolute;
+  position:absolute;*/
   top: 75px; 
   right: 10px;
   
     @include animation-name (kitty2);
-    @include animation-duration (10s);
+    @include kitty;
+    /*@include animation-duration (10s);
     @include animation-timing-function (ease-in-out);
-    @include animation-iteration-count (infinite);
-}
-
-@keyframes kitty2{
-    from { right: 10px;}
-    50% { right: 190px;}
-    to { right: 10px;}   
+    @include animation-iteration-count (infinite);*/
 }
 
 .anim3 {
@@ -112,7 +106,7 @@ h1{
   height: 75px;
   position:absolute; 
   top: 10px; 
-  right: 30px;
+  right: 300px;
 
     @include animation(sun);
     @include animation-iteration-count(infinite);
@@ -120,6 +114,21 @@ h1{
     @include animation-duration(3000ms);
 }
 
+/* kitty 1 animation */
+@keyframes kitty1{
+    from { left: 10px;}
+    50% { left: 190px;}
+    to { left: 10px;}   
+}
+
+/* kitty 2 animation */
+@keyframes kitty2{
+    from { right: 10px;}
+    50% { right: 190px;}
+    to { right: 10px;}   
+}
+
+/* sun animation */
 @keyframes sun {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

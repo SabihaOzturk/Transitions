@@ -87,6 +87,19 @@
   @include transition-timing-function($timing...);
 }
 
+@mixin anims{
+  width:300px;
+  height:225px;
+  background:url(images/kitty.png) no-repeat;
+  position:absolute;
+}
+
+@mixin kitty{
+  @include animation-duration (10s);
+  @include animation-timing-function (ease-in-out);
+  @include animation-iteration-count (infinite);
+
+}
 
 /*// generic transform*/
 @mixin transform($transforms) {

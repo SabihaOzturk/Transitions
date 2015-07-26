@@ -193,7 +193,7 @@ h1 {
     transition-timing-function: 2s; }
 
 #kitty {
-  margin: 0 auto;
+  /*margin:0 auto;*/
   position: relative; }
 
 .anim1 {
@@ -201,6 +201,10 @@ h1 {
   height: 225px;
   background: url(images/kitty.png) no-repeat;
   position: absolute;
+  /*width:300px;
+  height:225px;
+  background:url(images/kitty.png) no-repeat;
+  position:absolute;*/
   top: 10px;
   left: 10px;
   -o-animation-name: kitty1;
@@ -218,20 +222,20 @@ h1 {
   -o-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  /*@include animation-duration (10s);
+  @include animation-timing-function (ease-in-out);
+  @include animation-iteration-count (infinite);*/ }
 
-@keyframes kitty1 {
-  from {
-    left: 10px; }
-  50% {
-    left: 190px; }
-  to {
-    left: 10px; } }
 .anim2 {
   width: 300px;
   height: 225px;
   background: url(images/kitty.png) no-repeat;
   position: absolute;
+  /*width:300px;
+  height:225px;
+  background:url(images/kitty.png) no-repeat;
+  position:absolute;*/
   top: 75px;
   right: 10px;
   -o-animation-name: kitty2;
@@ -249,22 +253,18 @@ h1 {
   -o-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  /*@include animation-duration (10s);
+  @include animation-timing-function (ease-in-out);
+  @include animation-iteration-count (infinite);*/ }
 
-@keyframes kitty2 {
-  from {
-    right: 10px; }
-  50% {
-    right: 190px; }
-  to {
-    right: 10px; } }
 .anim3 {
   background: url(images/sun.png) no-repeat;
   width: 75px;
   height: 75px;
   position: absolute;
   top: 10px;
-  right: 30px;
+  right: 300px;
   -o-animation: sun;
   -moz-animation: sun;
   -webkit-animation: sun;
@@ -282,6 +282,23 @@ h1 {
   -webkit-animation-duration: 3000ms;
   animation-duration: 3000ms; }
 
+/* kitty 1 animation */
+@keyframes kitty1 {
+  from {
+    left: 10px; }
+  50% {
+    left: 190px; }
+  to {
+    left: 10px; } }
+/* kitty 2 animation */
+@keyframes kitty2 {
+  from {
+    right: 10px; }
+  50% {
+    right: 190px; }
+  to {
+    right: 10px; } }
+/* sun animation */
 @keyframes sun {
   from {
     transform: rotate(0deg); }
