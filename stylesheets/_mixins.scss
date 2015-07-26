@@ -1,5 +1,5 @@
 @import "variables";
-@import "nav";
+//@import "nav";
 
 @mixin content{
   margin: 0 auto;
@@ -85,6 +85,9 @@
   @include animation-iteration-count (infinite);
 }
 
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}));
+}
 
 
 // generic transform
