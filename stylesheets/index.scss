@@ -73,8 +73,8 @@ h1{
   height:225px;
   background:url(images/kitty.png) no-repeat;
   position:absolute;
-  top:30px;
-  left:180px;
+  top:10px;
+  left:10px;
    
     @include animation-name (kitty1);
     @include animation-duration (10s);
@@ -82,7 +82,26 @@ h1{
     @include animation-iteration-count (infinite);
 }
 @keyframes kitty1{
-    from { left: 180px;}
-    50% { left: 350px;}
-    to { left: 180px;}   
+    from { left: 10px;}
+    50% { left: 190px;}
+    to { left: 10px;}   
+}
+.anim2 {
+  width:300px;
+  height:225px;
+  background:url(images/kitty.png) no-repeat;
+  position:absolute;
+  top: 75px; 
+  right: 10px;
+  
+    @include animation-name (kitty2);
+    @include animation-duration (10s);
+    @include animation-timing-function (ease-in-out);
+    @include animation-iteration-count (infinite);
+}
+
+@keyframes kitty2{
+    from { right: 10px;}
+    50% { right: 190px;}
+    to { right: 10px;}   
 }
