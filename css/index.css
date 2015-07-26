@@ -258,5 +258,34 @@ h1 {
     right: 190px; }
   to {
     right: 10px; } }
+.anim3 {
+  background: url(images/sun.png) no-repeat;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  -o-animation: sun;
+  -moz-animation: sun;
+  -webkit-animation: sun;
+  animation: sun;
+  -o-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -o-animation-duration: 3000ms;
+  -moz-animation-duration: 3000ms;
+  -webkit-animation-duration: 3000ms;
+  animation-duration: 3000ms; }
+
+@keyframes sun {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=index.css.map */
