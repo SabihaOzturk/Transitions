@@ -1,6 +1,13 @@
 body {
   background-color: #FA8072; }
 
+header {
+  padding-top: 30px; }
+  @media screen and (max-width: 780px) {
+    header {
+      padding-top: 350px;
+      margin: 0 auto; } }
+
 h1, p, .buttons {
   text-align: center;
   margin-top: 4%; }
