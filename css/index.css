@@ -1,9 +1,16 @@
-/*@import "nav";*/
 body {
   background-color: #FA8072; }
 
-h1 {
-  text-align: center; }
+h1, p, .buttons {
+  text-align: center;
+  margin-top: 4%; }
+
+p, .buttons {
+  font-size: 22px;
+  font-family: Trebuchet, sans-serif; }
+
+.buttons {
+  margin-top: 40%; }
 
 .content {
   margin: 0 auto;
@@ -13,8 +20,7 @@ h1 {
   width: 800px;
   height: 400px;
   border-radius: 20px;
-  margin-top: 3%;
-  margin-top: 6%; }
+  margin-top: 3%; }
   .content:target, .content:hover {
     cursor: pointer; }
 
@@ -194,12 +200,12 @@ h1 {
 #kitty {
   position: relative; }
 
-.anim1 {
+#anim1 {
   width: 300px;
   height: 225px;
   background: url(images/kitty.png) no-repeat;
   position: absolute;
-  top: 50px;
+  top: 30px;
   left: 10px;
   -o-animation-name: kitty1;
   -moz-animation-name: kitty1;
@@ -218,12 +224,12 @@ h1 {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.anim2 {
+#anim2 {
   width: 300px;
   height: 225px;
   background: url(images/kitty.png) no-repeat;
   position: absolute;
-  top: 110px;
+  top: 80px;
   right: 10px;
   -o-animation-name: kitty2;
   -moz-animation-name: kitty2;
@@ -242,12 +248,12 @@ h1 {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.anim3 {
+#anim3 {
   background: url(images/sun.png) no-repeat;
   width: 75px;
   height: 75px;
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 300px;
   -o-animation: sun;
   -moz-animation: sun;
@@ -285,16 +291,8 @@ h1 {
 /* sun animation */
 @keyframes sun {
   from {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   to {
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
 /*# sourceMappingURL=index.css.map */

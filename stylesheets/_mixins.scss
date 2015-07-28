@@ -1,5 +1,4 @@
 @import "variables";
-//@import "nav";
 
 @mixin content{
   margin: 0 auto;
@@ -88,6 +87,16 @@
 @mixin rotate($deg) {
   @include transform(rotate(#{$deg}));
 }
+
+@mixin horizontal-keyframe($name, $start){
+  @keyframes #{$name}{
+    from { #{$start}: 10px;}
+    50% { #{$start}: 190px;}
+    to { #{$start}: 10px;}   
+  }
+}
+
+
 
 
 // generic transform

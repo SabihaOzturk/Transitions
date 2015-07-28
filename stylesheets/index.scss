@@ -1,6 +1,5 @@
 @import "mixins";
 @import "variables";
-/*@import "nav";*/
 
 body{
   background-color: #FA8072;
@@ -8,10 +7,20 @@ body{
 
 h1{
   text-align: center;
+  margin-top: 4%;
+}
+p {
+ @extend h1;
+
+ font-size: $fos;
+ font-family: $fof;
+}
+.buttons{
+  @extend p;
+  margin-top: 40%;
 }
 .content {
   @include content;
-  margin-top: 6%;
 
   &:target, &:hover{
   cursor:pointer;
@@ -69,30 +78,30 @@ h1{
 #kitty{
   position:relative;
 }
-.anim1{
+#anim1{
   @include anims;
-  top:50px;
+  top:30px;
   left:10px;
    
     @include animation-name (kitty1);
     @include kitty;
 }
 
-.anim2 {
+#anim2 {
   @include anims;
-  top: 110px; 
+  top: 80px; 
   right: 10px;
   
     @include animation-name (kitty2);
     @include kitty;
 }
 
-.anim3 {
+#anim3 {
   background: url(images/sun.png) no-repeat; 
   width: 75px; 
   height: 75px;
   position:absolute; 
-  top: 20px; 
+  top: 10px; 
   right: 300px;
 
     @include animation(sun);
@@ -102,22 +111,18 @@ h1{
 }
 
 /* kitty 1 animation */
-@keyframes kitty1{
-    from { left: 10px;}
-    50% { left: 190px;}
-    to { left: 10px;}   
-}
+@include horizontal-keyframe(kitty1, left);
 
 /* kitty 2 animation */
-@keyframes kitty2{
-    from { right: 10px;}
-    50% { right: 190px;}
-    to { right: 10px;}   
-}
+@include horizontal-keyframe(kitty2, right);
 
 /* sun animation */
 @keyframes sun {
-  from { @include rotate(0deg); }
-  to { @include rotate(360deg); }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
+
+
+
+
 
