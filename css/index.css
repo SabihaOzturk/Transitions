@@ -1,12 +1,12 @@
 body {
   background-color: #FA8072; }
+  @media screen and (max-width: 780px) {
+    body {
+      padding: 0px;
+      margin: 0 auto; } }
 
 header {
   padding-top: 30px; }
-  @media screen and (max-width: 780px) {
-    header {
-      padding-top: 350px;
-      margin: 0 auto; } }
 
 h1, p, .buttons {
   text-align: center;
@@ -15,9 +15,6 @@ h1, p, .buttons {
 p, .buttons {
   font-size: 22px;
   font-family: Trebuchet, sans-serif; }
-
-.buttons {
-  margin-top: 40%; }
 
 .content {
   margin: 0 auto;
@@ -30,6 +27,11 @@ p, .buttons {
   margin-top: 3%; }
   .content:target, .content:hover {
     cursor: pointer; }
+  @media screen and (max-width: 780px) {
+    .content {
+      padding: 0px;
+      margin-top: 5%;
+      width: 75%; } }
 
 #opacity {
   border: 1px gray solid;
@@ -58,6 +60,9 @@ p, .buttons {
     -ms-transition: 2s;
     transition: 2s;
     opacity: 0.2; }
+  @media screen and (max-width: 780px) {
+    #opacity {
+      margin-top: 30%; } }
 
 #margin {
   border: 1px gray solid;
@@ -86,6 +91,9 @@ p, .buttons {
     -ms-transition: 2s;
     transition: 2s;
     margin-top: 40%; }
+  @media screen and (max-width: 780px) {
+    #margin {
+      margin-top: 30%; } }
 
 #position {
   border: 1px gray solid;
@@ -121,6 +129,9 @@ p, .buttons {
     -webkit-transition: 5s;
     -ms-transition: 5s;
     transition: 5s; }
+  @media screen and (max-width: 780px) {
+    #position {
+      margin-top: 30%; } }
 
 #transform-rotate {
   border: 1px gray solid;
@@ -261,7 +272,7 @@ p, .buttons {
   height: 75px;
   position: absolute;
   top: 10px;
-  right: 300px;
+  right: 200px;
   -o-animation: sun;
   -moz-animation: sun;
   -webkit-animation: sun;

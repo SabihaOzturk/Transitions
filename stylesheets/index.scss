@@ -3,14 +3,13 @@
 
 body{
   background-color: #FA8072;
+  @media screen and (max-width: 780px) {
+    padding: 0px; 
+    margin: 0 auto;
+  } 
 }
 header{
   padding-top: 30px;
-
-  @media screen and (max-width: 780px) {
-     padding-top: 350px; 
-      margin: 0 auto;
-    } 
 }
 
 h1{
@@ -24,14 +23,19 @@ p {
 }
 .buttons{
   @extend p;
-  margin-top: 40%;
 }
+
 .content {
   @include content;
 
   &:target, &:hover{
   cursor:pointer;
   }
+  @media screen and (max-width: 780px) {
+     padding: 0px;
+     margin-top: 5%; 
+     width: 75%;
+  } 
 }
 
 #opacity {
@@ -41,6 +45,9 @@ p {
   &:target, &:hover{
   @include opacity-transition(.2, 2s);
   }
+  @media screen and (max-width: 780px) {
+     margin-top: 30%; 
+    }
 }
 
 #margin {
@@ -50,6 +57,9 @@ p {
   &:target, &:hover{
   @include margin-transition(40%, 2s);
   }
+  @media screen and (max-width: 780px) {
+     margin-top: 30%; 
+    }
  } 
 
 #position {
@@ -59,6 +69,9 @@ p {
   &:target, &:hover{
   @include position-transition(5s);
   }
+  @media screen and (max-width: 780px) {
+     margin-top: 30%; 
+    }
 }
 
 #transform-rotate{
@@ -109,7 +122,7 @@ p {
   height: 75px;
   position:absolute; 
   top: 10px; 
-  right: 300px;
+  right: 200px;
 
     @include animation(sun);
     @include animation-iteration-count(infinite);
