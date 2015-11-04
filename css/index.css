@@ -35,8 +35,8 @@ p, .buttons {
 
 #opacity {
   border: 1px gray solid;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 100px;
   margin: 20% auto;
   padding: 30px;
@@ -66,8 +66,8 @@ p, .buttons {
 
 #margin {
   border: 1px gray solid;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 100px;
   margin: 20% auto;
   padding: 30px;
@@ -97,8 +97,8 @@ p, .buttons {
 
 #position {
   border: 1px gray solid;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 100px;
   margin: 20% auto;
   padding: 30px;
@@ -135,8 +135,8 @@ p, .buttons {
 
 #transform-rotate {
   border: 1px gray solid;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 100px;
   margin: 20% auto;
   padding: 30px;
@@ -176,8 +176,8 @@ p, .buttons {
 
 #transform-scale {
   border: 1px gray solid;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 100px;
   margin: 20% auto;
   padding: 30px;
